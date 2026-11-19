@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posada y Restaurant Bare Bare</title>
+    <!-- Favicon y fuentes/íconos -->
+    <link rel="icon" type="image/png" href="LOGO.png">
+    <link rel="apple-touch-icon" href="LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="PosadaDeco.css">
+</head>
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header id="header">
+        <div class="logo">
+            <a href="#inicio" class="logo-text-group">
+                <span class="logo-main">Bare - Bare</span>
+                <span class="logo-sub">Posada - Spa - Restaurante</span>
+            </a>
+            <a href="#inicio"><img src="LOGO.png" alt="Logo Posada Bare Bare" class="header-logo header-logo-left"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu"><i class="fa-solid fa-bars"></i></div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#habitaciones" class="nav-link">Habitaciones</a></li>
+                <li><a href="#menu" class="nav-link">Restaurante</a></li>
+                <li><a href="#galeria" class="nav-link">Galería</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#" id="open-login-btn" class="nav-login-btn"><i class="fa-solid fa-lock"></i> <span id="user-nav-text">Admin</span></a></li>
+                <li><img src="logosinfondo.png" alt="Emblema Bare Bare" class="header-logo header-logo-right"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portada / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('carrusel1.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel2.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel3.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel4.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel5.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel6.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel7.jpg');"></div>
+            <div class="carousel-slide" style="background-image: url('carrusel8.jpg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1 id="hero-title" data-editable>Posada & Restaurant Bare Bare</h1>
+            <p id="hero-desc-1" data-editable>Entre el susurro de la brisa y la magia de nuestras montañas.</p>
+            <p id="hero-desc-2" data-editable>Un refugio de paz donde cada rincón abraza tus sentidos.</p>
+            <a href="#habitaciones" class="btn">Explorar Habitaciones</a>
+        </div>
+    </section>
+
+    <!-- Habitaciones -->
+    <section id="habitaciones" class="reveal">
+        <h2 class="section-title">Nuestras Habitaciones</h2>
+        <div class="grid-cards">
+            <div class="card room-card" data-modal-desc="Ideal para parejas que buscan descanso y tranquilidad rodeados de naturaleza. Incluye aire acondicionado, TV por cable, Wi-Fi de alta velocidad, baño privado con agua caliente, acceso a las áreas verdes de la posada y desayuno incluido.">
+                <div class="card-img-wrapper">
+                    <div class="room-carousel">
+                        <img src="habitacion12.jpg" class="room-slide active" alt="Habitación 1 y 2">
+                        <img src="habitacion12.2.jpg" class="room-slide" alt="Habitación 1 y 2 vista 2">
+                        <img src="habitacion12.3.jpg" class="room-slide" alt="Habitación 1 y 2 vista 3">
+                        <button class="carousel-btn prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 id="room-title-1" data-editable>Habitación 1 y 2</h3>
+                    <p id="room-desc-1" data-editable>Ideal para parejas. Incluye aire acondicionado, TV por cable, Wi-Fi, baño privado y desayuno incluido.</p>
+                    <span class="price" id="price-habitacion-1" data-editable>$60 / Noche (Para 2 personas)</span>
+                </div>
+            </div>
+
+            <div class="card room-card" data-modal-desc="Mayor espacio, amplitud y confort para tu estadía en Posada & Restaurant Baré Baré. Incluye aire acondicionado, TV por cable, Wi-Fi, baño privado, terraza con vista a los jardines y desayuno incluido.">
+                <div class="card-img-wrapper">
+                    <div class="room-carousel">
+                        <img src="habitacion34.jpg" class="room-slide active" alt="Habitación 3 y 4">
+                        <img src="habitacion34.2.jpg" class="room-slide" alt="Habitación 3 y 4 vista 2">
+                        <img src="habitacion34.3.jpg" class="room-slide" alt="Habitación 3 y 4 vista 3">
+                        <button class="carousel-btn prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 id="room-title-2" data-editable>Habitación 3 y 4</h3>
+                    <p id="room-desc-2" data-editable>Mayor espacio y confort. Incluye aire acondicionado, Wi-Fi, baño privado y desayuno incluido.</p>
+                    <span class="price" id="price-habitacion-2" data-editable>$80 / Noche (Para 2 personas)</span>
+                </div>
+            </div>
+
+            <div class="card room-card" data-modal-desc="La máxima experiencia de lujo y privacidad en la montaña. Amplios espacios en madera, sala de estar privada, balcón con vista panorámica, atención personalizada, acceso preferencial al spa/restaurante y desayuno incluido.">
+                <div class="card-img-wrapper">
+                    <div class="room-carousel">
+                        <img src="habitacioncasaarbol.jpg" class="room-slide active" alt="Casa Del Árbol">
+                        <img src="habitacioncasaarbol.2.jpg" class="room-slide" alt="Casa Del Árbol vista 2">
+                        <img src="habitacioncasaarbol.3.jpg" class="room-slide" alt="Casa Del Árbol vista 3">
+                        <button class="carousel-btn prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button class="carousel-btn next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 id="room-title-3" data-editable>Casa Del Árbol</h3>
+                    <p id="room-desc-3" data-editable>Descripción: Suite con una cama king matrimonial con vista a la montaña. Incluye aire acondicionado, TV cable, baño privado y desayuno incluido. (lunes a jueves 80 Euros por noche), (viernes a domingo 100 Euros por noche)</p>
+                    <span class="price" id="price-habitacion-3" data-editable>80/100 &euro;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú del restaurant -->
+    <section id="menu" class="reveal section-alt">
+        <h2 class="section-title">Menú del Restaurant</h2>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-desayunos" data-editable>Desayunos</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="des-1-t" data-editable>Andino</h4><p id="des-1-d" data-editable>Caldo de papas, arepa, queso, nata, jugo, café.</p></div><div class="menu-price" id="des-1-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="des-2-t" data-editable>Criollo</h4><p id="des-2-d" data-editable>Arepa, queso, perico, nata, mantequilla, jugo, café.</p></div><div class="menu-price" id="des-2-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="des-3-t" data-editable>Merideño</h4><p id="des-3-d" data-editable>Pizca andina, arepa de trigo, nata, queso, jugo, café.</p></div><div class="menu-price" id="des-3-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="des-4-t" data-editable>Americano</h4><p id="des-4-d" data-editable>Pan tostado, tocineta, huevo frito, mermelada, natilla, jugo, café.</p></div><div class="menu-price" id="des-4-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="des-5-t" data-editable>Típico</h4><p id="des-5-d" data-editable>Arepa caraotas, queso a la plancha, huevo al gusto, jugo, café.</p></div><div class="menu-price" id="des-5-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="des-6-t" data-editable>Infantil</h4><p id="des-6-d" data-editable>Panquecas o wafles, queso, sirop, jugo o leche.</p></div><div class="menu-price" id="des-6-p" data-editable>$15</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-entradas" data-editable>Entradas</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-1-t" data-editable>Tostones o Tajadas con queso y nata</h4><p id="ent-1-d" data-editable>Clásicos de la casa recién preparados.</p></div><div class="menu-price" id="ent-1-p" data-editable>$5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-2-t" data-editable>Arepas de chicharrón / Morcillas / Tequeños</h4><p id="ent-2-d" data-editable>Raciones ideales para compartir.</p></div><div class="menu-price" id="ent-2-p" data-editable>$5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-3-t" data-editable>Chupetas de pollo</h4><p id="ent-3-d" data-editable>Crocantes y jugosas al estilo del chef.</p></div><div class="menu-price" id="ent-3-p" data-editable>$6</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-4-t" data-editable>Queso a la plancha / Papas fritas o criollas</h4><p id="ent-4-d" data-editable>Papas fritas, criollas aderezadas o queso a la plancha.</p></div><div class="menu-price" id="ent-4-p" data-editable>$3</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-5-t" data-editable>Papas con bacon y queso cheddar</h4><p id="ent-5-d" data-editable>Servidas bien calientes con tocineta y cheddar fundido.</p></div><div class="menu-price" id="ent-5-p" data-editable>$5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-6-t" data-editable>Tabla de Quesos y Embutidos</h4><p id="ent-6-d" data-editable>Selección variada para compartir.</p></div><div class="menu-price" id="ent-6-p" data-editable>$20</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-7-t" data-editable>Brushchetas</h4><p id="ent-7-d" data-editable>Siciliana, Chorizo y chistorra, o Mixtas con napole y pesto.</p></div><div class="menu-price" id="ent-7-p" data-editable>$5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-8-t" data-editable>Chicharrón carnudo / Acevichado</h4><p id="ent-8-d" data-editable>Opción carnuda tradicional o acevichada.</p></div><div class="menu-price" id="ent-8-p" data-editable>$8</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ent-9-t" data-editable>Camarones al ajillo</h4><p id="ent-9-d" data-editable>Salteados al ajillo con toque de la casa.</p></div><div class="menu-price" id="ent-9-p" data-editable>$10</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-almuerzos" data-editable>Almuerzos — Plato Principal y Especialidades</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-1-t" data-editable>Sopa del día</h4><p id="alm-1-d" data-editable>Preparación fresca del día.</p></div><div class="menu-price" id="alm-1-p" data-editable>$6</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-2-t" data-editable>Punta trasera Bare Bare / Solomo de cuerito</h4><p id="alm-2-d" data-editable>Con ensalada fresca y papas rústicas.</p></div><div class="menu-price" id="alm-2-p" data-editable>$16</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-3-t" data-editable>Parrilla para dos (500 grs.)</h4><p id="alm-3-d" data-editable>Con ensalada fresca y papas rústicas.</p></div><div class="menu-price" id="alm-3-p" data-editable>$28</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-4-t" data-editable>Parrilla mixta (700 grs.)</h4><p id="alm-4-d" data-editable>Con ensalada fresca y papas rústicas.</p></div><div class="menu-price" id="alm-4-p" data-editable>$35</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-5-t" data-editable>Cerdo al tambor (300 grs. / 1 Kg.)</h4><p id="alm-5-d" data-editable>300 grs. ($16) o 1 Kg. ($45), con ensalada fresca y papas rústicas.</p></div><div class="menu-price" id="alm-5-p" data-editable>$16 / $45</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="alm-6-t" data-editable>Especialidades de la Casa</h4><p id="alm-6-d" data-editable>Lomito Bare Bare, Pollo Bare Bare 250g, Pollo Capresa, Strogonoff (pollo/lomito) y Salmón (a la plancha o vino y limón).</p></div><div class="menu-price" id="alm-6-p" data-editable>Consultar</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-pizzas" data-editable>Pizzas</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="piz-1-t" data-editable>Margarita</h4><p id="piz-1-d" data-editable>Salsa de la casa, queso mozzarela.</p></div><div class="menu-price" id="piz-1-p" data-editable>$8</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="piz-2-t" data-editable>Margarita con jamón</h4><p id="piz-2-d" data-editable>Salsa de la casa, queso mozzarela, jamón.</p></div><div class="menu-price" id="piz-2-p" data-editable>$10</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="piz-3-t" data-editable>Granjera / Caprese</h4><p id="piz-3-d" data-editable>Granjera (jamón, maíz, pollo) o Caprese (tomates, albahaca y pesto) con mozzarela.</p></div><div class="menu-price" id="piz-3-p" data-editable>$11</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="piz-4-t" data-editable>Charcutera</h4><p id="piz-4-d" data-editable>Salsa de la casa, queso mozzarela, tocineta, pepperoni, salami, chorizo.</p></div><div class="menu-price" id="piz-4-p" data-editable>$12</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="piz-5-t" data-editable>Cuatro Estaciones / Siciliana</h4><p id="piz-5-d" data-editable>Cuatro Estaciones o Siciliana (anchoas, aceitunas negras, tomates deshidratados).</p></div><div class="menu-price" id="piz-5-p" data-editable>$14</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-pastas" data-editable>Pastas (Con pan al ajillo)</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="pas-1-t" data-editable>Napole</h4><p id="pas-1-d" data-editable>Salsa a base de tomate y parmesano.</p></div><div class="menu-price" id="pas-1-p" data-editable>$8</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="pas-2-t" data-editable>Boloñesa / Alfredo con jamón / Carbonara / Al Pesto</h4><p id="pas-2-d" data-editable>Variedades clásicas con parmesano y pan al ajillo.</p></div><div class="menu-price" id="pas-2-p" data-editable>$10</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="pas-3-t" data-editable>Cartoccio de lomito / Strogonoff / Bare Bare</h4><p id="pas-3-d" data-editable>Con champiñones, medallones de lomito, pollo o tomates deshidratados y parmesano.</p></div><div class="menu-price" id="pas-3-p" data-editable>$15</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="pas-4-t" data-editable>Salsa de camarones</h4><p id="pas-4-d" data-editable>Reducción de vino blanco con champiñones, camarones y parmesano.</p></div><div class="menu-price" id="pas-4-p" data-editable>$18</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-hamburguesas" data-editable>Hamburguesas y Shawarmas</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="ham-1-t" data-editable>Shawarma de pollo</h4><p id="ham-1-d" data-editable>Pan pita, salsas, pollo a la plancha, jamón, queso americano, vegetales y papas fritas.</p></div><div class="menu-price" id="ham-1-p" data-editable>$8</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ham-2-t" data-editable>Hamburguesas (Pollo, Pollo crispy, Lomito o Cerdo al tambor)</h4><p id="ham-2-d" data-editable>Salsas, jamón, queso americano, huevo, vegetales y papas fritas.</p></div><div class="menu-price" id="ham-2-p" data-editable>$10</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ham-3-t" data-editable>Shawarma de lomito o Mixto</h4><p id="ham-3-d" data-editable>Pan pita, salsas, proteína a elección, jamón, queso americano, vegetales y papas fritas.</p></div><div class="menu-price" id="ham-3-p" data-editable>$10</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-ensaladas" data-editable>Ensaladas y Plato Infantil</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="ens-1-t" data-editable>Ensalada Queso Brie</h4><p id="ens-1-d" data-editable>Lechuga, almendras, prosciutto, queso brie, aceite de oliva.</p></div><div class="menu-price" id="ens-1-p" data-editable>$12</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ens-2-t" data-editable>Ensaladas Variadas</h4><p id="ens-2-d" data-editable>César, César con pollo, frutos secos, atún, aguacate, Capresa, Ensalada de la casa y Con Frutas.</p></div><div class="menu-price" id="ens-2-p" data-editable>Consultar</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="ens-3-t" data-editable>Plato Infantil — Tenders de pollo</h4><p id="ens-3-d" data-editable>Acompañados con papas fritas, refresco y helado.</p></div><div class="menu-price" id="ens-3-p" data-editable>Consultar</div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 class="menu-category-title" id="cat-bebidas" data-editable>Jugos, Bebidas y Postres</h3>
+            <div class="menu-subgrid">
+                <div class="menu-item"><div class="menu-info"><h4 id="beb-1-t" data-editable>Agua / Refresco</h4><p id="beb-1-d" data-editable>Agua ($1) o refresco ($1.5).</p></div><div class="menu-price" id="beb-1-p" data-editable>$1 / $1.5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="beb-2-t" data-editable>Jugos Naturales / Frappé</h4><p id="beb-2-d" data-editable>Jugos naturales de temporada o frappé.</p></div><div class="menu-price" id="beb-2-p" data-editable>$2</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="beb-3-t" data-editable>Cafés (Café negro, con leche, Capuchino o Mocachino)</h4><p id="beb-3-d" data-editable>Preparaciones calientes recién hechas.</p></div><div class="menu-price" id="beb-3-p" data-editable>$2</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="beb-4-t" data-editable>Merengada de helado</h4><p id="beb-4-d" data-editable>Cremosa y fría.</p></div><div class="menu-price" id="beb-4-p" data-editable>$5</div></div>
+                <div class="menu-item"><div class="menu-info"><h4 id="beb-5-t" data-editable>Postres (Quesillo, Fresas con crema, Brownie o Copa de helado)</h4><p id="beb-5-d" data-editable>Quesillo ($2), fresas con crema ($3), brownie con helado o copa de helado 2 sabores ($4) y chocolate con queso y galletas ($4).</p></div><div class="menu-price" id="beb-5-p" data-editable>$2 – $4</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="reveal">
+        <h2 class="section-title">Nuestros Espacios</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="area5.jpg" alt="Parte de Casa de Árbol"><div class="gallery-overlay"><span id="gallery-span-1" data-editable>Parte de Casa de Árbol</span></div></div>
+            <div class="gallery-item"><img src="area6.jpg" alt="Terraza Habitaciones 3 y 4"><div class="gallery-overlay"><span id="gallery-span-2" data-editable>Terraza Habitaciones 3 y 4</span></div></div>
+            <div class="gallery-item"><img src="area1.jpg" alt="Patio de Arena"><div class="gallery-overlay"><span id="gallery-span-3" data-editable>Patio de Arena</span></div></div>
+            <div class="gallery-item"><img src="area2.jpg" alt="Zona de Picnic"><div class="gallery-overlay"><span id="gallery-span-4" data-editable>Zona de Picnic</span></div></div>
+            <div class="gallery-item"><img src="area3.jpg" alt="Sala de Vinos"><div class="gallery-overlay"><span id="gallery-span-5" data-editable>Sala de Vinos</span></div></div>
+            <div class="gallery-item"><img src="area4.jpg" alt="Principal"><div class="gallery-overlay"><span id="gallery-span-6" data-editable>Principal</span></div></div>
+        </div>
+    </section>
+
+    <!-- Contacto y redes -->
+    <section id="contacto" class="reveal">
+        <h2 class="section-title">Contacto y Redes</h2>
+        <div class="contact-box">
+            <div class="contact-info">
+                <h3>Información</h3>
+                <p id="contact-address" data-editable><i class="fa-solid fa-location-dot"></i> A 10 minutos de la UNET, Táchira, Venezuela</p>
+                <a href="https://maps.app.goo.gl/PRukhYmpozqCP2XZ7?g_st=aw" target="_blank" class="map-btn"><i class="fa-solid fa-map-location-dot"></i> Ver Ubicación en Google</a>
+                <div class="mini-map-container">
+                    <iframe src="https://maps.google.com/maps?q=Posada%20%26%20Restaurant%20Bare%20Bare%2C%20San%20Cristobal%2C%20Tachira&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen></iframe>
+                </div>
+                <a href="https://wa.me/584147129070" target="_blank" class="wa-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+            <div class="ig-section">
+                <h3>Síguenos en Instagram</h3>
+                <p id="contact-ig-desc" data-editable>Mantente al tanto de nuestras promociones y disponibilidad de suites.</p>
+                <a href="https://www.instagram.com/posadaenbarebare?mdxt=MXh3djJoaWF1dG9mag==" target="_blank" class="ig-btn"><i class="fa-brands fa-instagram"></i> @posadaenbarebare</a>
+                <div class="ig-logo-wrapper">
+                    <img src="logosinfondo.png" alt="Logo Oficial Posada Bare Bare" class="contact-brand-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales: Admin, Habitación y Lightbox -->
+    <div id="auth-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="close-modal" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div id="login-container" class="auth-form">
+                <h3>Acceso Administrativo</h3>
+                <p class="auth-subtitle">Panel exclusivo para gestión y marketing</p>
+                <div id="auth-alert" class="auth-alert"></div>
+                <form id="login-form">
+                    <div class="input-group"><i class="fa-solid fa-envelope"></i><input type="email" id="login-email" placeholder="Correo institucional" required></div>
+                    <div class="input-group"><i class="fa-solid fa-lock"></i><input type="password" id="login-password" placeholder="Contraseña de acceso" required></div>
+                    <button type="submit" class="btn auth-submit">Ingresar al Panel</button>
+                </form>
+            </div>
+            <div id="logged-panel" class="logged-panel">
+                <i class="fa-solid fa-shield-halved logged-icon"></i>
+                <h3>Modo Admin Activo</h3>
+                <p>Tienes permisos para editar precios y textos de la posada.</p>
+                <button id="logout-btn" class="btn logout-btn">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="room-modal" class="modal-overlay">
+        <div class="modal-box room-modal-box">
+            <button class="close-modal" id="close-room-modal"><i class="fa-solid fa-xmark"></i></button>
+            <img id="modal-room-img" src="" alt="" class="modal-room-img">
+            <h3 id="modal-room-title"></h3>
+            <span id="modal-room-price" class="modal-room-price"></span>
+            <p id="modal-room-desc" class="modal-room-desc"></p>
+            <div class="modal-posada-info">
+                <i class="fa-solid fa-hotel"></i> <strong>Posada & Restaurant Bare Bare</strong> — A 10 min de la UNET, Táchira. Atención personalizada y ambiente exclusivo.
+            </div>
+            <a id="modal-room-wa" href="#" target="_blank" class="btn modal-wa-btn"><i class="fa-brands fa-whatsapp"></i> Pedir Habitación</a>
+        </div>
+    </div>
+
+    <div id="gallery-lightbox" class="modal-overlay">
+        <div class="lightbox-content">
+            <button class="close-modal" id="close-lightbox"><i class="fa-solid fa-xmark"></i></button>
+            <img id="lightbox-img" src="" alt="">
+            <p id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Posada & Restaurant Bare Bare. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Carrusel principal y scroll
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 4000);
+
+        const header = document.getElementById('header');
+        const reveals = document.querySelectorAll('.reveal');
+        const checkScroll = () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            reveals.forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active');
+            });
+        };
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+
+        // Menú móvil
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+        const menuIcon = mobileMenu.querySelector('i');
+        const closeNav = () => {
+            navMenu.classList.remove('active');
+            menuIcon.className = 'fa-solid fa-bars';
+        };
+        mobileMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-xmark');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', closeNav));
+
+        // Modales
+        const setupModal = (modalId, closeBtnId) => {
+            const modal = document.getElementById(modalId);
+            document.getElementById(closeBtnId).addEventListener('click', () => modal.classList.remove('active'));
+            modal.addEventListener('click', e => { if (e.target === modal) modal.classList.remove('active'); });
+            return modal;
+        };
+        const authModal = setupModal('auth-modal', 'close-modal-btn');
+        const roomModal = setupModal('room-modal', 'close-room-modal');
+        const galleryLightbox = setupModal('gallery-lightbox', 'close-lightbox');
+
+        document.getElementById('open-login-btn').addEventListener('click', e => {
+            e.preventDefault();
+            closeNav();
+            authModal.classList.add('active');
+        });
+
+        // Modo administrador (localStorage)
+        const ADMIN_EMAIL = 'posadabarebare@gmail.com';
+        const ADMIN_PASS = 'BareBare#Admin2026*';
+        let isAdminMode = false;
+
+        const activateAdminMode = () => {
+            isAdminMode = true;
+            document.getElementById('user-nav-text').textContent = 'Admin 👑';
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('logged-panel').classList.add('active');
+
+            if (!document.getElementById('admin-float-bar')) {
+                const bar = document.createElement('div');
+                bar.id = 'admin-float-bar';
+                bar.innerHTML = '<span>🛡️ Modo Admin: Toca un texto para editar.</span><button id="save-btn" class="btn">Guardar</button>';
+                document.body.appendChild(bar);
+
+                document.querySelectorAll('[data-editable]').forEach(el => el.setAttribute('contenteditable', 'true'));
+                document.getElementById('save-btn').addEventListener('click', () => {
+                    const data = {};
+                    document.querySelectorAll('[data-editable]').forEach(el => { if (el.id) data[el.id] = el.textContent.trim(); });
+                    localStorage.setItem('barebare_custom_content', JSON.stringify(data));
+                    alert('¡Cambios guardados con éxito!');
+                });
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedData = JSON.parse(localStorage.getItem('barebare_custom_content')) || {};
+            for (const [id, text] of Object.entries(savedData)) {
+                const el = document.getElementById(id);
+                if (el) el.textContent = text;
+            }
+            if (localStorage.getItem('barebare_active_email') === ADMIN_EMAIL) activateAdminMode();
+        });
+
+        document.getElementById('login-form').addEventListener('submit', e => {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value.trim().toLowerCase();
+            const pass = document.getElementById('login-password').value;
+
+            if (email === ADMIN_EMAIL && pass === ADMIN_PASS) {
+                localStorage.setItem('barebare_active_email', ADMIN_EMAIL);
+                activateAdminMode();
+                e.target.reset();
+                authModal.classList.remove('active');
+            } else {
+                const alertBox = document.getElementById('auth-alert');
+                alertBox.textContent = 'Credenciales de administrador incorrectas.';
+                alertBox.classList.add('show');
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            localStorage.removeItem('barebare_active_email');
+            location.reload();
+        });
+
+        // Carruseles y modal de habitaciones
+        document.querySelectorAll('.room-carousel').forEach(carousel => {
+            const roomSlides = carousel.querySelectorAll('.room-slide');
+            let idx = 0;
+            const change = step => {
+                roomSlides[idx].classList.remove('active');
+                idx = (idx + step + roomSlides.length) % roomSlides.length;
+                roomSlides[idx].classList.add('active');
+            };
+            carousel.querySelector('.prev').addEventListener('click', e => { e.stopPropagation(); change(-1); });
+            carousel.querySelector('.next').addEventListener('click', e => { e.stopPropagation(); change(1); });
+        });
+
+        document.querySelectorAll('.room-card').forEach(card => {
+            card.addEventListener('click', () => {
+                if (isAdminMode) return;
+                const title = card.querySelector('h3').textContent;
+                const price = card.querySelector('.price').textContent;
+                document.getElementById('modal-room-img').src = card.querySelector('.room-slide.active').src;
+                document.getElementById('modal-room-title').textContent = title;
+                document.getElementById('modal-room-price').textContent = price;
+                document.getElementById('modal-room-desc').textContent = card.dataset.modalDesc;
+                document.getElementById('modal-room-wa').href = `https://wa.me/584147129070?text=${encodeURIComponent(`Hola, me gustaría pedir la ${title} (${price}) en Posada Bare Bare.`)}`;
+                roomModal.classList.add('active');
+            });
+        });
+
+        // Lightbox de galería
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('lightbox-img').src = item.querySelector('img').src;
+                document.getElementById('lightbox-caption').textContent = item.querySelector('span').textContent;
+                galleryLightbox.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
